@@ -20,7 +20,7 @@ export const projects = [
         name: "portifolio",
         description: "Site para apresentar a minha pessoa e meus projetos.",
         link: "https://github.com/GabrieLima12/portifolio",
-        imgUrl: "",
+        imgUrl: "https://raw.githubusercontent.com/GabrieLima12/portifolio/main/src/assets/home.png",
         projectLink: null
     },
 ]
