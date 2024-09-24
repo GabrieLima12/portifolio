@@ -1,0 +1,52 @@
+import { useState } from "react";
+import { FaRegMoon, FaSun, FaBars } from "react-icons/fa";
+
+interface NavBarProps {
+    onChange: () => void;
+    darkMode: boolean;
+}
+
+export default function NavBar ({ onChange, darkMode } : NavBarProps) {
+
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    function openMenu () {
+        setIsOpen(!isOpen);
+    }
+
+    return (
+        <nav className="bg-white dark:bg-gray-800 dark:text-slate-50 flex w-full px-10 py-5 items-center justify-between z-[100] shadow-md fixed">
+            <h2 className="text-xl font-bold">Gabriel Lima</h2>
+            
+            <ul className="hidden lg:flex items-center gap-5">
+                <li className="flex items-center">
+                    <button className="focus:outline-none" onClick={onChange}>{darkMode ? <FaSun /> : <FaRegMoon />}</button>
+                </li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            
+            <div className="lg:hidden flex gap-5">
+                <button className="focus:outline-none" onClick={onChange}>{darkMode ? <FaSun /> : <FaRegMoon />}</button>
+                <FaBars className="hover:cursor-pointer" onClick={openMenu}/>
+            </div>
+
+            <div className={`absolute lg:hidden top-16 left-0 w-full bg-white dark:bg-gray-800 flex flex-col items-center gap-6 text-xl transform transition-transform ${isOpen ? "opacity-100" : "opacity-0"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
+                <li className="list-none w-full text-center p-4">
+                    <a onClick={openMenu} href="#home">Início</a>
+                </li>
+                <li className="list-none w-full text-center p-4">
+                    <a onClick={openMenu} href="#about-me">Sobre mim</a>
+                </li>
+                <li className="list-none w-full text-center p-4">
+                    <a onClick={openMenu} href="#projects">Projetos</a>
+                </li>
+                <li className="list-none w-full text-center p-4">
+                    <a onClick={openMenu} href="#contact">Contato</a>
+                </li>
+            </div>
+        </nav>
+    )
+}
