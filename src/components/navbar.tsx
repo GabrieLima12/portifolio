@@ -34,18 +34,26 @@ export default function NavBar ({ onChange, darkMode } : NavBarProps) {
             </div>
 
             <div className={`absolute lg:hidden top-16 left-0 w-full bg-white dark:bg-gray-800 flex flex-col items-center gap-6 text-xl transform transition-transform ${isOpen ? "opacity-100" : "opacity-0"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
-                <li className="list-none w-full text-center p-4">
-                    <a onClick={openMenu} href="#home">Início</a>
-                </li>
-                <li className="list-none w-full text-center p-4">
-                    <a onClick={openMenu} href="#about-me">Sobre mim</a>
-                </li>
-                <li className="list-none w-full text-center p-4">
-                    <a onClick={openMenu} href="#projects">Projetos</a>
-                </li>
-                <li className="list-none w-full text-center p-4">
-                    <a onClick={openMenu} href="#contact">Contato</a>
-                </li>
+                <a className="w-full" onClick={openMenu} href="#home">
+                    <li className="list-none text-center p-4">
+                        Início
+                    </li>
+                </a>
+                <a className="w-full" onClick={openMenu} href="#about-me">
+                    <li className="list-none text-center p-4">
+                        Sobre mim
+                    </li>
+                </a>
+                <a className="w-full" onClick={openMenu} href="#projects">
+                    <li className="list-none text-center p-4">
+                        Projetos
+                    </li>
+                </a>
+                <a className="w-full" onClick={openMenu} href="#contact">
+                    <li className="list-none text-center p-4">
+                        Contato
+                    </li>
+                </a>
             </div>
         </nav>
     )
