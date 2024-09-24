@@ -39,7 +39,7 @@ export default function AboutMe () {
                     </p>
                     <p className="flex flex-col items-center gap-2">
                         <img className="size-14" src={tailwindCss} alt="tailwindCss-img" />
-                        Tailwindd CSS
+                        Tailwind CSS
                     </p>
                     <p className="flex flex-col items-center gap-2">
                         <img className="size-14" src={javaScript} alt="javaScript-img" />
