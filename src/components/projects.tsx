@@ -3,7 +3,7 @@ import { projects } from "../data/projects";
 export default function Projects () {
     return (
         <section id="projects" className="bg-backGray dark:bg-gray-900 dark:text-slate-50 py-20 px-10">
-            <h2 className="text-xl text-center font-semibold pb-10">Projects</h2>
+            <h2 className="text-xl text-center font-semibold pb-10">Projetos</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 {projects.map(project => (
                     <div key={project.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col sm:flex-row p-5 gap-5">
