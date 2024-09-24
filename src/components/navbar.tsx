@@ -33,7 +33,7 @@ export default function NavBar ({ onChange, darkMode } : NavBarProps) {
                 <FaBars className="hover:cursor-pointer" onClick={openMenu}/>
             </div>
 
-            <div className={`absolute lg:hidden top-16 left-0 w-full bg-white dark:bg-gray-800 flex flex-col items-center gap-6 text-xl transform transition-transform ${isOpen ? "opacity-100" : "opacity-0"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
+            <div className={`absolute lg:hidden top-16 left-0 w-full bg-white dark:bg-gray-800 flex flex-col items-center gap-6 text-xl transform transition-transform ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
                 <a className="w-full" onClick={openMenu} href="#home">
                     <li className="list-none text-center p-4">
                         Início
