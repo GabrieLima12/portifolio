@@ -12,7 +12,7 @@ export default function Projects () {
                             <img className="w-64 h-40 rounded-lg" src={project.imgUrl} alt={project.name} />
                         </div>
                         <div className="flex flex-col gap-5 items-center justify-center w-full sm:w-1/2">
-                            <p>{project.description}</p>
+                            <p className="text-justify">{project.description}</p>
                             <div className="flex gap-5">
                                 <a href={project.link} target="_blank">
                                     <button className="bg-black text-slate-50 dark:bg-gray-600 p-2 rounded-sm">GitHub</button>

@@ -21,7 +21,7 @@ export default function Home () {
             }
             <div className="max-w-[550px] flex flex-col gap-3 items-center lg:items-start">
                 <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-start">Desenvolvedor Full Stack</h1>
-                <p className="text-sm">Olá me chamo Gabriel, tenho 20 anos e sou um profissional na área do desenvolvimento, fico feliz em ter você aqui! <br /> Fique a vontade para olhar meus projetos e minhas habilidades.</p>
+                <p className="text-sm text-justify">Olá me chamo Gabriel, tenho 20 anos e sou um profissional na área do desenvolvimento, fico feliz em ter você aqui! <br /> Fique a vontade para olhar meus projetos e minhas habilidades.</p>
                 <span className="flex gap-4">
                     <a href="https://www.linkedin.com/in/gabrielimacouto/" target="_blank"><FaLinkedin size={35} /></a>
                     <a href="https://github.com/GabrieLima12" target="_blank"><FaGithub size={35} /></a>

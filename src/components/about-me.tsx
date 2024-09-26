@@ -12,7 +12,7 @@ export default function AboutMe () {
         <section id="about-me" className="dark:bg-gray-800 dark:text-slate-50 py-20 px-10 flex flex-col md:flex-row gap-5 items-start justify-around">
             <div className="w-full md:w-1/2">
                 <h2 className="text-xl font-semibold pb-5">Sobre mim</h2>
-                <p className="w-full md:w-3/4">Sou um desenvolvedor apaixonado por solucionar desafios e sempre focado em entender e atingir os objetivos dos projetos em que atuo. Combinando experiência prática e uma busca contínua por aprimoramento, gosto de aplicar o que aprendi para entregar resultados consistentes. Comunicação clara, colaboração e resolução de problemas são elementos-chave que guiam meu trabalho diário, sempre em busca de evolução e impacto positivo nas equipes e projetos.</p>
+                <p className="w-full md:w-3/4 text-justify">Sou um desenvolvedor apaixonado por solucionar desafios e sempre focado em entender e atingir os objetivos dos projetos em que atuo. Combinando experiência prática e uma busca contínua por aprimoramento, gosto de aplicar o que aprendi para entregar resultados consistentes. Comunicação clara, colaboração e resolução de problemas são elementos-chave que guiam meu trabalho diário, sempre em busca de evolução e impacto positivo nas equipes e projetos.</p>
             </div>
             <div className="w-full md:w-1/2">
                 <h2 className="text-xl font-semibold pb-5">Habilidades</h2>
