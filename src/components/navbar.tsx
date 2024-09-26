@@ -22,15 +22,15 @@ export default function NavBar ({ onChange, darkMode } : NavBarProps) {
                 <li className="flex items-center">
                     <button className="focus:outline-none" onClick={onChange}>{darkMode ? <FaSun /> : <FaRegMoon />}</button>
                 </li>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about-me">Sobre mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li className="hover:border-b hover:border-b-black dark:hover:border-b-white border-transition" style={{ transition: "border-bottom .3s ease"}} ><a href="#home">Início</a></li>
+                <li className="hover:border-b hover:border-b-black dark:hover:border-b-white border-transition" style={{ transition: "border-bottom .3s ease"}} ><a href="#about-me">Sobre mim</a></li>
+                <li className="hover:border-b hover:border-b-black dark:hover:border-b-white border-transition" style={{ transition: "border-bottom .3s ease"}} ><a href="#projects">Projetos</a></li>
+                <li className="hover:border-b hover:border-b-black dark:hover:border-b-white border-transition" style={{ transition: "border-bottom .3s ease"}} ><a href="#contact">Contato</a></li>
             </ul>
             
             <div className="lg:hidden flex gap-5">
-                <button className="focus:outline-none" onClick={onChange}>{darkMode ? <FaSun /> : <FaRegMoon />}</button>
-                <FaBars className="hover:cursor-pointer" onClick={openMenu}/>
+                <button className="focus:outline-none" onClick={onChange}>{darkMode ? <FaSun size={20} /> : <FaRegMoon size={20} />}</button>
+                <FaBars size={20} className="hover:cursor-pointer" onClick={openMenu}/>
             </div>
 
             <div className={`absolute lg:hidden top-16 left-0 w-full bg-white dark:bg-gray-800 flex flex-col items-center gap-6 text-xl transform transition-transform ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
