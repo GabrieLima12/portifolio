@@ -14,12 +14,12 @@ export default function Home () {
 
     return (
         <section id="home" className="bg-backGray dark:bg-gray-900 dark:text-slate-50 px-10 pt-12 h-screen flex flex-col gap-[50px] items-center justify-center sm:flex-row">
-            {isMobile && 
-                <div>
-                    <img className="max-w-[200px] lg:max-w-[300px] mt-12 rounded-full" src={photo} alt="gabriel-photo" />
-                </div>
-            }
-            <div className="max-w-[550px] flex flex-col gap-3 items-center lg:items-start">
+            <div className="max-w-[550px] flex flex-col gap-5 items-center lg:items-start">
+                {isMobile && 
+                    <div>
+                        <img className="max-w-[200px] lg:max-w-[300px] mt-12 rounded-full" src={photo} alt="gabriel-photo" />
+                    </div>
+                }
                 <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-start">Desenvolvedor Full Stack</h1>
                 <p className="text-sm text-justify">Olá me chamo Gabriel, tenho 20 anos e sou um profissional na área do desenvolvimento, fico feliz em ter você aqui! <br /> Fique a vontade para olhar meus projetos e minhas habilidades.</p>
                 <span className="flex gap-4">
